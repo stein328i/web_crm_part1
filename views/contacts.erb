@@ -1,0 +1,23 @@
+ <h1>Welcome to My Contacts</h1>
+
+ <a href="<%= @index_link  %>">
+ <%= @index_link %>
+ 	
+ </a>
+ 
+
+ <ol>
+  <% @contacts.each do |contact| %>
+  	<li> first_name = <%= contact.first_name %> 
+  	last_name = <%= contact.last_name %> 
+  	email = <%= contact.email %> 
+  	note = <%= contact.note %> </li>
+  <% end %>
+ </ol>
+
+
+
+
+
+
+
